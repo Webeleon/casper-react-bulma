@@ -1,70 +1,250 @@
-# Casper
+Last week a client come to me and ask for a custom npm package with a standardized react component he can use in his three sites. No issue, I build the thing and start the integration. 
+* main website: ok
+* documentation site: ok
+* ghost blog: ...
+The problems start with the blog...
+Ghost blog theming is mainly editing handlebar files, zipping them, and uploading them to the blog.
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
-
-&nbsp;
-
-![screenshot-desktop](https://user-images.githubusercontent.com/353959/66987533-40eae100-f0c1-11e9-822e-cbaf38fb8e3f.png)
-
-&nbsp;
-
-# First time using a Ghost theme?
-
-Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
-
-This theme has lots of code comments to help explain what's going on just by reading the code. Once you feel comfortable with how everything works, we also have full [theme API documentation](https://ghost.org/docs/api/handlebars-themes/) which explains every possible Handlebars helper and template.
-
-**The main files are:**
-
-- `default.hbs` - The parent template file, which includes your global header/footer
-- `index.hbs` - The main template to generate a list of posts, usually the home page
-- `post.hbs` - The template used to render individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives, eg. "all posts tagged with `news`"
-- `author.hbs` - Used for author archives, eg. "all posts written by Jamie"
-
-One neat trick is that you can also create custom one-off templates by adding the slug of a page to a template file. For example:
-
-- `page-about.hbs` - Custom template for an `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
-
-
-# Development
-
-Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+## [First let's install](https://ghost.org/docs/install/local/)
+The company behind ghost blog provides a sass solution for blogging, this means you won't be able to find how to install a local version easily but it is indeed quite easy.
 
 ```bash
-# install dependencies
-yarn install
-
-# run development server
-yarn dev
+npm install ghost-cli@latest -g
+# create a local copy and start
+mkdir someLocalBlogFolder
+cd someLocalBlogFolder
+ghost install local
+ghost start
 ```
+You can now connect to [http://localhost:2368/ghost/#/site](http://localhost:2368/ghost/#/site) and set up a user.
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+And voila, first step done. We have a local copy!
+*little voice*: that's not what you had to do! none will pay for a local install!
 
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
+## [Clone a Casper theme](https://github.com/TryGhost/Casper) 
 
+Ok, to gain a little time we'll clone and edit the Casper theme which is the default ghost theme.
 ```bash
-# create .zip file
-yarn zip
+git clone git@github.com:TryGhost/Casper.git customCasper
+cd customCasper
 ```
 
-# PostCSS Features Used
+## Create a navbar using [Bulma](https://bulma.io/)
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- Variables - Simple pure CSS variables
-- [Color Function](https://github.com/postcss/postcss-color-function)
+Let's install the basic libraries:
+```bash
+npm i -D react react-dom bulma
+```
+We will build our react app in a folder called `react`
+```bash
+mkdir react
+```
+Inside the react folder, we will create the react app entry point `react/src/app.jsx`.
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import './app.scss';
+import { NavbarContainer } from "./containers/NavbarContainer.jsx";
+
+const navbarDomContainer = document.querySelector('#navbar');
+ReactDOM.render(
+    (<NavbarContainer />),
+    navbarDomContainer
+);
+```
+
+## add main sass styling file `react/src/app.scss`
+Ok, technically we can just import bulma sass in the `app.jsx` file, but this way we will have an entry point to edit (if we want).
+```sass
+@charset "utf-8";
+
+@import "bulma/bulma";
+
+div#navbar {
+    z-index: 10000
+}
+```
+
+## create the navbar component `react/src/components/Navbar.jsx`
+I know this is just the basic [Bulma navbar example](https://bulma.io/documentation/components/navbar/#basic-navbar), it does not include the js to handle the burger menu (it will be covered in another post)
+```jsx
+import React from 'react';
+
+export const Navbar = () => (
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+            <a className="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+            </a>
+
+            <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
 
 
-# SVG Icons
+        <div id="navbarBasicExample" className="navbar-menu">
+            <div className="navbar-start">
+                <a className="navbar-item">
+                    Home
+                </a>
 
-Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
+                <a className="navbar-item">
+                    Documentation
+                </a>
 
-You can add your own SVG icons in the same manner.
+                <div className="navbar-item has-dropdown is-hoverable">
+                    <a className="navbar-link">
+                        More
+                    </a>
 
+                    <div className="navbar-dropdown">
+                        <a className="navbar-item">
+                            About
+                        </a>
+                        <a className="navbar-item">
+                            Jobs
+                        </a>
+                        <a className="navbar-item">
+                            Contact
+                        </a>
+                        <hr className="navbar-divider" />
+                        <a className="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-# Copyright & License
+            <div className="navbar-end">
+                <div className="navbar-item">
+                    <div className="buttons">
+                        <a className="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a className="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+);
 
-Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
+```
+
+## add an HTML tag with the id `navbar` in the main handlebar file `default.hbs`
+```hbs
+{<!-- more in the file --}
+<body class="{{body_class}}">
+    <div class="site-wrapper">
+
+        <div id="navbar"></div>    
+
+        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+        {{{body}}}
+
+{<!-- ... more in the file --}
+```
+
+## build system to bundle the react app
+
+Install webpack tooling with all the loaders we will need.
+```bash
+npm i -D webpack webpack-cli @babel/core babel-loader @babel/preset-env @babel/preset-react node-sass style-loader css-loader sass-loader 
+```
+
+At the theme root, we need to add a webpack configuration `webpack.config.js` file just like this one:
+```js
+const path = require('path');
+
+module.exports = {
+    entry: {
+        main: "./react/src/app.jsx",
+    },
+    module: {
+        rules: [
+            {
+                test: /\.jsx?$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/env', '@babel/preset-react']
+                    }
+                }
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+            },
+            {
+                test: /\.scss$/,
+                use: ["style-loader", "css-loader", "sass-loader"],
+            },
+        ],
+    },
+    output: {
+        filename: "[name].bundle.js",
+        path: path.resolve(__dirname, "assets/built"),
+    },
+};
+```
+
+Cool, we can now bundle the react app using webpack. 
+*little voice: but when i run `npm run zip` the react app is not built...*
+<a href="https://imgflip.com/i/3zvhue"><img src="https://i.imgflip.com/3zvhue.jpg" title="made at imgflip.com"/></a>
+
+Ok then, we will need to install one last dependency.
+```bash
+npm i -D webpack-stream
+```
+
+Add a new `webpack` task in the file `gulpfile.js` and add the function to the build definition.
+```js
+// ... more gulpfile ...
+const webpackStream = require('webpack-stream');
+
+// ... more gulpfile ...
+
+function webpack(done) {
+    pump([
+        src('assets/built'),
+        webpackStream(require('./webpack.config.js')),
+        dest('assets/built')
+    ], handleError(done));
+}
+
+// ... more gulpfile ...
+// add the 
+const build = series(css, js, webpack);
+// ... more gulpfile ...
+```
+
+Oh yeah! we can now build everything the "right way".
+```bash
+npm run zip
+```
+
+Wait a second... We wrote a react app, we built the app. 
+Oh damned, we forgot to load the bundle in the main template. 
+Let's add the bundle to the main template: `default.hbs`
+
+```hbs
+{{<!-- more handlebar template, close to the end of the body --}}
+
+    <script src="{{asset "built/main.bundle.js"}}"></script>
+
+{{<!-- more handlebar template, close to the end of the body --}}
+```
+
+Let's rebuild and upload the built theme in the blog...
+
+And voila, look at your blog and you have a bulma navbar.
+
+[Full sources in github](https://github.com/bassochette/casper-react-bulma)

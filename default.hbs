@@ -21,7 +21,7 @@
 <body class="{{body_class}}">
 
     <div class="site-wrapper">
-
+        <div id="navbar"></div>
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
 
@@ -86,6 +86,8 @@
     </script>
     {{!-- Fitvids (for responsive video embeds), infinite scroll, floating header, and gallery card support --}}
     <script src="{{asset "built/casper.js"}}"></script>
+
+    <script src="{{asset "built/main.bundle.js"}}"></script>
 
     {{!-- Scripts for Members subscription --}}
     <script>

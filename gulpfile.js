@@ -12,6 +12,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const beeper = require('beeper');
 const fs = require('fs');
+const webpackStream = require('webpack-stream');
 
 // postcss plugins
 const autoprefixer = require('autoprefixer');
@@ -74,6 +75,14 @@ function js(done) {
     ], handleError(done));
 }
 
+function webpack(done) {
+    pump([
+        src('assets/built'),
+        webpackStream(require('./webpack.config.js')),
+        dest('assets/built')
+    ], handleError(done));
+}
+
 function zipper(done) {
     const filename = require('./package.json').name + '.zip';
 
@@ -91,7 +100,7 @@ function zipper(done) {
 const cssWatcher = () => watch('assets/css/**', css);
 const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs'], hbs);
 const watcher = parallel(cssWatcher, hbsWatcher);
-const build = series(css, js);
+const build = series(css, js, webpack);
 
 exports.build = build;
 exports.zip = series(build, zipper);
