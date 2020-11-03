@@ -56,7 +56,7 @@
         "autoprefixer": "9.7.6",
         "babel-loader": "8.1.0",
         "beeper": "2.0.0",
-        "bulma": "0.8.2",
+        "bulma": "0.9.1",
         "css-loader": "3.5.3",
         "cssnano": "4.1.10",
         "gscan": "3.5.4",
