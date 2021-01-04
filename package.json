@@ -55,7 +55,7 @@
         "@tryghost/release-utils": "0.6.9",
         "autoprefixer": "10.1.0",
         "babel-loader": "8.2.2",
-        "beeper": "2.0.0",
+        "beeper": "2.1.0",
         "bulma": "0.9.1",
         "css-loader": "5.0.1",
         "cssnano": "4.1.10",
