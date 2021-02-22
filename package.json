@@ -52,7 +52,7 @@
         "@babel/core": "7.12.17",
         "@babel/preset-env": "7.12.17",
         "@babel/preset-react": "7.12.13",
-        "@tryghost/release-utils": "0.6.11",
+        "@tryghost/release-utils": "0.6.12",
         "autoprefixer": "10.2.4",
         "babel-loader": "8.2.2",
         "beeper": "2.1.0",
