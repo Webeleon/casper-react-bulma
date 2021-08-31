@@ -78,7 +78,7 @@
         "style-loader": "3.2.1",
         "webpack": "5.51.1",
         "webpack-cli": "4.8.0",
-        "webpack-stream": "6.1.2"
+        "webpack-stream": "7.0.0"
     },
     "browserslist": [
         "defaults"
