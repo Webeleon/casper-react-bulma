@@ -1042,15 +1042,15 @@
     "@elastic/elasticsearch" "^7.15.0"
     "@tryghost/debug" "^0.1.9"
 
-"@tryghost/errors@^0.2.17":
-  version "0.2.17"
-  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-0.2.17.tgz#9b89f3845256ace5650593f41cc86d64965b56ed"
-  integrity sha512-Mj+bedWOwfooNA8fQdp6gIcRvWcKhJ/hOyGzu6OLFDLgEosFEeuFgXE6SsAWkf9+9NTYX30w88qGIWZqOhEAmQ==
+"@tryghost/errors@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-1.0.4.tgz#9692cfd4c27a269ddbce77d93d02cfa8c52cc7ad"
+  integrity sha512-ImfwkOc54Ur9zjYgPaG3Y9wFeH00eJnqClYBZSB5/K0T6nqTXnIOyFIq33vZkmXuxQLX1xRb82OeWYxHxgFWDA==
   dependencies:
-    "@tryghost/ignition-errors" "^0.1.0"
     lodash "^4.17.21"
+    uuid "^8.3.2"
 
-"@tryghost/ignition-errors@0.1.8", "@tryghost/ignition-errors@^0.1.0":
+"@tryghost/ignition-errors@0.1.8":
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/@tryghost/ignition-errors/-/ignition-errors-0.1.8.tgz#6d4c4d4e02d32403ca1e574eaa91b3c0d138d6f6"
   integrity sha512-4KYU+kDXZyP7tmzyHiUkfDy9RWxKAtA/6xTGdxYHurE5ZlT++cDDfdUtF0v3308GGUzKlBzRc3jmLjDYpngcBQ==
@@ -1091,12 +1091,12 @@
     moment "^2.29.1"
     prettyjson "^1.2.1"
 
-"@tryghost/release-utils@0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.7.1.tgz#cfcb4bb6992394a13d1e414b35b4072f0b4851f9"
-  integrity sha512-hZWJAnQ8bF3WId3IHorINj5GfBX90gZf9kMBtK9jfMYM1Vj0vsuLW65cf/4L2xHStsb2yMFpWEgKi1InlocFcQ==
+"@tryghost/release-utils@0.7.6":
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.7.6.tgz#8716f1f310db1907c01afe16612e0da006c8bd84"
+  integrity sha512-3LScECktZFQncFMXQRmBb/Lg12AuscwpBMiwG5gZIfCC+HqWt7n1SqP9wkqla+b0EhFr2UWnFefvHXBoRjeaJA==
   dependencies:
-    "@tryghost/errors" "^0.2.17"
+    "@tryghost/errors" "^1.0.4"
     bluebird "^3.7.2"
     emoji-regex "^9.2.2"
     execa "^4.1.0"
