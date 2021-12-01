@@ -1042,10 +1042,10 @@
     "@elastic/elasticsearch" "^7.15.0"
     "@tryghost/debug" "^0.1.9"
 
-"@tryghost/errors@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-1.0.4.tgz#9692cfd4c27a269ddbce77d93d02cfa8c52cc7ad"
-  integrity sha512-ImfwkOc54Ur9zjYgPaG3Y9wFeH00eJnqClYBZSB5/K0T6nqTXnIOyFIq33vZkmXuxQLX1xRb82OeWYxHxgFWDA==
+"@tryghost/errors@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-1.1.0.tgz#3288eb30ed148c1ada7d3b0e818f5af03c531cbe"
+  integrity sha512-Dssqhw4f/xHFDqbkm0bHCT/gVBGsgoRfzgT7bj0urMD83olrHKdIqal9iKswWLeKzfdhyqM+cW8J7lmSaWHBMA==
   dependencies:
     lodash "^4.17.21"
     uuid "^8.3.2"
@@ -1107,12 +1107,12 @@
     moment "^2.29.1"
     prettyjson "^1.2.1"
 
-"@tryghost/release-utils@0.7.6":
-  version "0.7.6"
-  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.7.6.tgz#8716f1f310db1907c01afe16612e0da006c8bd84"
-  integrity sha512-3LScECktZFQncFMXQRmBb/Lg12AuscwpBMiwG5gZIfCC+HqWt7n1SqP9wkqla+b0EhFr2UWnFefvHXBoRjeaJA==
+"@tryghost/release-utils@0.7.7":
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.7.7.tgz#520824d27ebbed54f212ec24065de81fe84999f2"
+  integrity sha512-P6Rbz0+sazoh2hPr3Wmf3Cvz5L3r23D7USlNe1mhgEKztJptToLABbojRH5aJLVq6MGo/Se1HtjuACcrphhciA==
   dependencies:
-    "@tryghost/errors" "^1.0.4"
+    "@tryghost/errors" "^1.1.0"
     bluebird "^3.7.2"
     emoji-regex "^9.2.2"
     execa "^4.1.0"
