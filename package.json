@@ -69,7 +69,7 @@
         "inquirer": "8.2.0",
         "node-sass": "7.0.1",
         "postcss-color-function": "4.1.0",
-        "postcss-custom-properties": "12.0.4",
+        "postcss-custom-properties": "12.1.2",
         "postcss-easy-import": "3.0.0",
         "pump": "3.0.0",
         "react": "17.0.2",
