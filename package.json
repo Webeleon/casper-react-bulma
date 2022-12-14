@@ -57,7 +57,7 @@
         "babel-loader": "9.1.0",
         "beeper": "3.0.0",
         "bulma": "0.9.4",
-        "css-loader": "6.7.2",
+        "css-loader": "6.7.3",
         "cssnano": "5.1.14",
         "gscan": "4.34.0",
         "gulp": "4.0.2",
