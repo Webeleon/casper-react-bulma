@@ -58,7 +58,7 @@
         "beeper": "3.0.0",
         "bulma": "0.9.4",
         "css-loader": "6.7.3",
-        "cssnano": "5.1.15",
+        "cssnano": "6.0.0",
         "gscan": "4.36.1",
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
