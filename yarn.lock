@@ -5221,10 +5221,10 @@ ini@^2.0.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-2.0.0.tgz#e5fd556ecdd5726be978fa1001862eacb0a94bc5"
   integrity sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==
 
-inquirer@9.2.4:
-  version "9.2.4"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-9.2.4.tgz#6a2c1ce029579eba2bb5c2953f0460c07e03dbf4"
-  integrity sha512-Q2KnguYUxC/GqkAWJBTWpXH1E3Qqh5VZaCqxK5HYYnQmaePKGLgscVfb3L3/32oF6NRW5VpGqUr75uDjtHHqRw==
+inquirer@9.2.5:
+  version "9.2.5"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-9.2.5.tgz#2a9df864c8b579083736e9c25161e2bb0a21841d"
+  integrity sha512-Vy3qZFUPKILCgfeg6eEfKSlv4QbwwfGmdoAYqXYGlPEhY4HH0jQv+ynHkEYYE4eBDCDMWKHs77ByfHcy1GyDfA==
   dependencies:
     ansi-escapes "^4.3.2"
     chalk "^5.2.0"
