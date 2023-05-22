@@ -67,7 +67,7 @@
         "gulp-uglify": "3.0.2",
         "gulp-zip": "5.1.0",
         "inquirer": "9.2.6",
-        "node-sass": "8.0.0",
+        "node-sass": "9.0.0",
         "postcss-color-function": "4.1.0",
         "postcss-custom-properties": "13.1.5",
         "postcss-easy-import": "4.0.0",
