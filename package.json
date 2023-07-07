@@ -54,7 +54,7 @@
         "@babel/preset-react": "7.22.5",
         "@tryghost/release-utils": "0.8.1",
         "autoprefixer": "10.4.14",
-        "babel-loader": "9.1.2",
+        "babel-loader": "9.1.3",
         "beeper": "3.0.0",
         "bulma": "0.9.4",
         "css-loader": "6.8.1",
