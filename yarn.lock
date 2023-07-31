@@ -1093,6 +1093,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@ljharb/through@^2.3.9":
+  version "2.3.9"
+  resolved "https://registry.yarnpkg.com/@ljharb/through/-/through-2.3.9.tgz#85f221eb82f9d555e180e87d6e50fb154af85408"
+  integrity sha512-yN599ZBuMPPK4tdoToLlvgJB4CLK8fGl7ntfy0Wn7U6ttNvHYurd81bfUiK/6sMkiIwm65R6ck4L6+Y3DfVbNQ==
+
 "@nicolo-ribaudo/semver-v6@^6.3.3":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/semver-v6/-/semver-v6-6.3.3.tgz#ea6d23ade78a325f7a52750aab1526b02b628c29"
@@ -5255,11 +5260,12 @@ ini@^2.0.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-2.0.0.tgz#e5fd556ecdd5726be978fa1001862eacb0a94bc5"
   integrity sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==
 
-inquirer@9.2.8:
-  version "9.2.8"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-9.2.8.tgz#35481704912c5a15985c380fd5493a8e6651b14e"
-  integrity sha512-SJ0fVfgIzZL1AD6WvFhivlh5/3hN6WeAvpvPrpPXH/8MOcQHeXhinmSm5CDJNRC2Q+sLh9YJ5k8F8/5APMXSfw==
+inquirer@9.2.9:
+  version "9.2.9"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-9.2.9.tgz#49c16cae502b773209598f8668d8ddbfe5b07ecb"
+  integrity sha512-0VXHov2GGwWquYxwxlcIcm3yOHvFb2jh/+HkY8/AUXSTWShpo6QJMlSfHi5Xo74NO40UePBM3rQcI3OkzOF/7A==
   dependencies:
+    "@ljharb/through" "^2.3.9"
     ansi-escapes "^4.3.2"
     chalk "^5.3.0"
     cli-cursor "^3.1.0"
@@ -5273,7 +5279,6 @@ inquirer@9.2.8:
     rxjs "^7.8.1"
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
-    through "^2.3.6"
     wrap-ansi "^6.0.1"
 
 interpret@^1.4.0:
@@ -8364,7 +8369,7 @@ through2@^3.0.1:
     inherits "^2.0.4"
     readable-stream "2 || 3"
 
-through@^2.3.6, through@^2.3.8:
+through@^2.3.8:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==
