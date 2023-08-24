@@ -49,7 +49,7 @@
     },
     "bugs": "https://github.com/bassochette/casper-react-bulma/issues",
     "devDependencies": {
-        "@babel/core": "7.22.10",
+        "@babel/core": "7.22.11",
         "@babel/preset-env": "7.22.10",
         "@babel/preset-react": "7.22.5",
         "@tryghost/release-utils": "0.8.1",
