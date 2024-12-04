@@ -51,7 +51,7 @@
     "devDependencies": {
         "@babel/core": "7.26.0",
         "@babel/preset-env": "7.26.0",
-        "@babel/preset-react": "7.25.9",
+        "@babel/preset-react": "7.26.3",
         "@tryghost/release-utils": "0.8.1",
         "autoprefixer": "10.4.20",
         "babel-loader": "9.2.1",
