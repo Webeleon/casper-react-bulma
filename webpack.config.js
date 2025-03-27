@@ -26,6 +26,19 @@ module.exports = {
             },
         ],
     },
+    
+	optimization: {
+    	minimizer: [new TerserPlugin({
+			extractComments: false,
+			// terserOptions: {
+        	// 	format: {
+	        //   		comments: false,
+        	// 	},
+      		// },
+    	})],
+	},
+    
+    
     output: {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "assets/built"),
