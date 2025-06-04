@@ -59,7 +59,7 @@
         "bulma": "1.0.4",
         "css-loader": "7.1.2",
         "cssnano": "7.0.7",
-        "gscan": "4.48.1",
+        "gscan": "4.49.0",
         "gulp": "5.0.1",
         "gulp-concat": "2.6.1",
         "gulp-livereload": "4.0.2",
