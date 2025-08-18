@@ -1005,7 +1005,7 @@
     "@inquirer/type" "^3.0.8"
     ansi-escapes "^4.3.2"
 
-"@inquirer/prompts@^7.8.2":
+"@inquirer/prompts@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@inquirer/prompts/-/prompts-7.8.3.tgz#f5cd3ea65b5356a158587fa6a9aa9ec80adb9201"
   integrity sha512-iHYp+JCaCRktM/ESZdpHI51yqsDgXu+dMs4semzETftOaF8u5hwlqnbIsuIR/LrWZl8Pm1/gzteK9I7MAq5HTA==
@@ -5302,13 +5302,13 @@ ini@^2.0.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-2.0.0.tgz#e5fd556ecdd5726be978fa1001862eacb0a94bc5"
   integrity sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==
 
-inquirer@12.9.2:
-  version "12.9.2"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-12.9.2.tgz#d755388c49e1a31ee83b86afde7dd48c899fcad4"
-  integrity sha512-XPukbomHpZc3GAajQdAcuqa5NCIFhUcLMcXXSpJLM2RW/u/5JHLxjLF206GNTJARib8XBBRqyMbaNrDzXROdoA==
+inquirer@12.9.3:
+  version "12.9.3"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-12.9.3.tgz#fe54ffb8f7ed0eb4c706eb1dcc748aad2f45082b"
+  integrity sha512-Hpw2JWdrYY8xJSmhU05Idd5FPshQ1CZErH00WO+FK6fKxkBeqj+E+yFXSlERZLKtzWeQYFCMfl8U2TK9SvVbtQ==
   dependencies:
     "@inquirer/core" "^10.1.15"
-    "@inquirer/prompts" "^7.8.2"
+    "@inquirer/prompts" "^7.8.3"
     "@inquirer/type" "^3.0.8"
     ansi-escapes "^4.3.2"
     mute-stream "^2.0.0"
