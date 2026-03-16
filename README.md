@@ -45,11 +45,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './app.scss';
-import { NavbarContainer } from "./containers/NavbarContainer.jsx";
+import { Navbar } from "./components/Navbar.jsx";
 
 const navbarDomContainer = document.querySelector('#navbar');
+
 ReactDOM.render(
-    (<NavbarContainer />),
+	(<Navbar />), 
     navbarDomContainer
 );
 ```
