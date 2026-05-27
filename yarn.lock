@@ -875,7 +875,7 @@
   resolved "https://registry.yarnpkg.com/@csstools/utilities/-/utilities-3.0.0.tgz#8c07044bd66f08c51f63fe5575a63f1b9a8bec8a"
   integrity sha512-etDqA/4jYvOGBM6yfKCOsEXfH96BKztZdgGmGqKi2xHnDe0ILIBraRspwgYatJH9JsCZ5HCGoCst8w18EKOAdg==
 
-"@discoveryjs/json-ext@^1.0.0":
+"@discoveryjs/json-ext@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-1.1.0.tgz#44b5ce3485e95235aca06e628eeaaa3c816bc4cc"
   integrity sha512-Xc3VhU02wqZ1HvHRJUwL09HkZSTvidqY5Ya0NXBSYOxAp+Ln9dcJr9fySI+CkONzP3PekQo9WdzCv0PGER/mOA==
@@ -4864,7 +4864,7 @@ fast-wrap-ansi@^0.2.0:
   dependencies:
     fast-string-width "^3.0.2"
 
-fastest-levenshtein@^1.0.12, fastest-levenshtein@^1.0.7:
+fastest-levenshtein@^1.0.7:
   version "1.0.16"
   resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.16.tgz#210e61b6ff181de91ea9b3d1b84fdedd47e034e5"
   integrity sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==
@@ -8716,16 +8716,15 @@ watchpack@^2.5.1:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
-webpack-cli@7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-7.0.2.tgz#c916e324acc7c14f895226ed351020924900db12"
-  integrity sha512-dB0R4T+C/8YuvM+fabdvil6QE44/ChDXikV5lOOkrUeCkW5hTJv2pGLE3keh+D5hjYw8icBaJkZzpFoaHV4T+g==
+webpack-cli@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-7.0.3.tgz#62d3374b424bb4fabb27d088d8b2a9685b325b02"
+  integrity sha512-2E2C6A1e2El7791zQgTH7LPIuwLjRliow9OHS/qlJc9pwhZlCoL/uiwqd/1WSlXT83wJfmfDbkcqHXuXoPJZ3g==
   dependencies:
-    "@discoveryjs/json-ext" "^1.0.0"
+    "@discoveryjs/json-ext" "^1.1.0"
     commander "^14.0.3"
     cross-spawn "^7.0.6"
     envinfo "^7.14.0"
-    fastest-levenshtein "^1.0.12"
     import-local "^3.0.2"
     interpret "^3.1.1"
     rechoir "^0.8.0"
