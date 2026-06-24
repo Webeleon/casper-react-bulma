@@ -53,7 +53,7 @@
         "@babel/preset-env": "8.0.2",
         "@babel/preset-react": "8.0.1",
         "@tryghost/release-utils": "0.8.1",
-        "autoprefixer": "10.5.1",
+        "autoprefixer": "10.5.2",
         "babel-loader": "10.1.1",
         "beeper": "3.0.0",
         "bulma": "1.0.4",
