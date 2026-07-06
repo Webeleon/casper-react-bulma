@@ -76,7 +76,7 @@
         "react-dom": "19.2.7",
         "sass-loader": "17.0.0",
         "style-loader": "4.0.0",
-        "webpack": "5.108.3",
+        "webpack": "5.108.4",
         "webpack-cli": "7.1.0",
         "webpack-stream": "7.0.0"
     },
