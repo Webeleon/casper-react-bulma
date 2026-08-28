@@ -141,14 +141,17 @@ export const Navbar = () => (
 ## add an HTML tag with the id `navbar` in the main handlebar file `default.hbs`
 ```hbs
 {<!-- more in the file --}
+
 <body class="{{body_class}}">
-    <div class="site-wrapper">
 
-        <div id="navbar"></div>    
+{<!-- more in the file --}
 
+    <div class="site-content">
+        <div id="navbar"></div>    {{!-- This is the line you need to add. --}}
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
-
+    </div>
+    
 {<!-- ... more in the file --}
 ```
 
