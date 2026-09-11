@@ -2342,12 +2342,12 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.1.tgz#35adc6222e3662fa2222ce123b961476a746b9ea"
   integrity sha512-HqmEUIGRJ5fSXchkVgR5F7qn48bDBzv0kWj/Kfu5e6uci4UlEeng4331LnBkWffb++Ei3FOVLxo8JJWMFBDMeQ==
 
-"@tryghost/debug@2.3.13":
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/@tryghost/debug/-/debug-2.3.13.tgz#3093d29821cde9c38e241ef0d07b685d405ba835"
-  integrity sha512-3AG+mm2wF9vdSFwH+k9jJaeqLHFigUeEUDyjaJxX5rasb0QPoSmNYxnXfJppbYVEFYOJ1UsqtsSdzG956sNCxQ==
+"@tryghost/debug@^2.3.14":
+  version "2.3.14"
+  resolved "https://registry.yarnpkg.com/@tryghost/debug/-/debug-2.3.14.tgz#2888e733ed4b57809c19c8ba9e4618e6929d677b"
+  integrity sha512-CuxfDTsuS8uPnAeJVCaokd7izIDhUzIi/mZo8ytKgKupx/K5UY03Pu0KwWJCuRRV2ZrDYeq00p8bBCM/H8uScg==
   dependencies:
-    "@tryghost/root-utils" "^2.3.13"
+    "@tryghost/root-utils" "^2.3.14"
     debug "^4.4.3"
 
 "@tryghost/errors@1.3.13":
@@ -2358,10 +2358,10 @@
     "@stdlib/utils-copy" "^0.2.0"
     uuid "^9.0.0"
 
-"@tryghost/errors@3.3.13", "@tryghost/errors@^3.3.13":
-  version "3.3.13"
-  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-3.3.13.tgz#135e9bfe489fa8be8e5e8ac29729be6bc1545062"
-  integrity sha512-ZJelL4irZpH+37ZATowbyA3PrSZHc9EsN2ThOXGS1ESThLnq/ETIJdrnXh38I5p/dFB9ZDH7GJfcjmRZvSM69Q==
+"@tryghost/errors@^3.3.14":
+  version "3.3.14"
+  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-3.3.14.tgz#3405ba1e62fa7738ae4e2cf234ffc64a1f2fc271"
+  integrity sha512-Z49f+Wy6benC35x+x30FAjBWDMllJN7mMg5mWrOtxK67ipAflKlcQgubT03ZTYbbPPc9J8Kx2In7fOcvyp6a5g==
 
 "@tryghost/mongo-knex@^0.11.2":
   version "0.11.2"
@@ -2385,7 +2385,7 @@
   dependencies:
     luxon "3.7.2"
 
-"@tryghost/nql@0.13.4":
+"@tryghost/nql@^0.13.4":
   version "0.13.4"
   resolved "https://registry.yarnpkg.com/@tryghost/nql/-/nql-0.13.4.tgz#d778251308cc5838a138c64d9c229376e67b04bf"
   integrity sha512-XE3lEpkqZM3ueOyKz5suwb2W4muWAM/YfYYpXHrnu0H7r46Xuo7FZm1s6Ga2Cut/STtuax5E6NfZ1AFv017X4w==
@@ -2396,10 +2396,10 @@
     lodash "4.18.1"
     mingo "2.5.3"
 
-"@tryghost/pretty-cli@3.3.13":
-  version "3.3.13"
-  resolved "https://registry.yarnpkg.com/@tryghost/pretty-cli/-/pretty-cli-3.3.13.tgz#e18c513a3fc037e4fe0a8b138a77ed7d3fda9e88"
-  integrity sha512-5IPhpQ1d2vXTC8Zb0I9FLOQ6LgE9ebSTAYYQERnR9bHgDvPEUPAUf7mZxPi/Cxi1OVsKKecrd0VJumqZw/EbKg==
+"@tryghost/pretty-cli@^3.3.14":
+  version "3.3.14"
+  resolved "https://registry.yarnpkg.com/@tryghost/pretty-cli/-/pretty-cli-3.3.14.tgz#dda693b81cea4ad7c493ee2a877e3b5e5f2f7841"
+  integrity sha512-zL+CX9BmciOx0mb1mG5lUSQQg+Dg57ntj6m0TAkaaSQon3lovrIbHznwpWkHLyggm9f+BltK5JTOdFqT/5oTpw==
   dependencies:
     chalk "^6.0.0"
     sywac "^1.3.0"
@@ -2415,20 +2415,20 @@
     execa "4.1.0"
     lodash "4.18.1"
 
-"@tryghost/root-utils@^2.3.13":
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/@tryghost/root-utils/-/root-utils-2.3.13.tgz#6b647d694e4b16243f98062e1ab3361a2e9746a4"
-  integrity sha512-b1tejLrOF95Ki21iQ0tH7U1obXmyP3dLTZ/gsyCBBmM1Jc9JhHWCubFldSb0+vN26IY7Lxh739U4U3njTkt0Yw==
+"@tryghost/root-utils@^2.3.14":
+  version "2.3.14"
+  resolved "https://registry.yarnpkg.com/@tryghost/root-utils/-/root-utils-2.3.14.tgz#a2d6e75ab04b75c537db5abbea524a3d0920503f"
+  integrity sha512-VmHSaPdjTCQNOTNvpLTmphi+TdorWbGbjgqTeCYFPgsWw3XUlByWaERYe3PV2JOmd2XeAhpG2KCegrmnPWMlKA==
   dependencies:
     caller "^1.1.0"
     find-root "^1.1.0"
 
-"@tryghost/zip@3.5.12":
-  version "3.5.12"
-  resolved "https://registry.yarnpkg.com/@tryghost/zip/-/zip-3.5.12.tgz#06f201d9a0622d1fd46efc2dad8ecf8642efa083"
-  integrity sha512-0wN9tbV0iylqZqaofNapQV+VxhhGVJCM7U5xqiTYmZqi6gR2U6X1dh+VFYoLvWbXaVma1iPEArhn+iETWk3HWw==
+"@tryghost/zip@^3.5.13":
+  version "3.5.13"
+  resolved "https://registry.yarnpkg.com/@tryghost/zip/-/zip-3.5.13.tgz#91b03baa3b0311260eb2d49406dcdedbfa7751a4"
+  integrity sha512-p6RQqbpXwUqngWdVG+b8v+OXyO0O4reVLqbIJmHJE8IPoFrZcJxrbVxQ2rX70lYleSvsSZ8y8UoCnTZ6QUhR+w==
   dependencies:
-    "@tryghost/errors" "^3.3.13"
+    "@tryghost/errors" "^3.3.14"
     archiver "^8.0.0"
     extract-zip "^2.0.1"
 
@@ -4242,16 +4242,16 @@ graceful-fs@^4.1.2, graceful-fs@^4.2.10, graceful-fs@^4.2.11, graceful-fs@^4.2.4
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
-gscan@6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/gscan/-/gscan-6.6.0.tgz#4d51d732ec4a6fabd30dd1f386898093f21cd329"
-  integrity sha512-sp8QERPGRSVzztmCkcrDPo0iw0yjDw3uqMng/wdksJdSV5dzzitmCTMVSxfbXrFfyOs/RuK9Ix+Mostt8jSuCw==
+gscan@6.6.1:
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/gscan/-/gscan-6.6.1.tgz#2ca19885a538ce5e4d660dcf2778c4f17e171381"
+  integrity sha512-Yl273hY1brah236M7wnfV/gx4ZH2QuPZpt+/IiZBIxcdSAfcfsjof4Bfyqo921+X/POItxoVtFS9Xt4jFZNXIQ==
   dependencies:
-    "@tryghost/debug" "2.3.13"
-    "@tryghost/errors" "3.3.13"
-    "@tryghost/nql" "0.13.4"
-    "@tryghost/pretty-cli" "3.3.13"
-    "@tryghost/zip" "3.5.12"
+    "@tryghost/debug" "^2.3.14"
+    "@tryghost/errors" "^3.3.14"
+    "@tryghost/nql" "^0.13.4"
+    "@tryghost/pretty-cli" "^3.3.14"
+    "@tryghost/zip" "^3.5.13"
     chalk "6.0.0"
     handlebars "4.7.9"
     lodash "4.18.1"
