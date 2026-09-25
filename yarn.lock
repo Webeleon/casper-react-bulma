@@ -825,20 +825,20 @@
   resolved "https://registry.yarnpkg.com/@colordx/core/-/core-6.5.0.tgz#7dbb1a8d5a7a5e645900c84b46f635d91d2d4900"
   integrity sha512-mhkTHXTERodsL6kMw2LRrXVlGaY+osu/YnxkcwO8c/JO+YOb+/f+F+gOxmeBWTP+nzG47Kz6gZCJq8tyESqrWg==
 
-"@csstools/cascade-layer-name-parser@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@csstools/cascade-layer-name-parser/-/cascade-layer-name-parser-3.0.0.tgz#506c2c67261459b5a1cfc4aa47fd22ae45b1b126"
-  integrity sha512-/3iksyevwRfSJx5yH0RkcrcYXwuhMQx3Juqf40t97PeEy2/Mz2TItZ/z/216qpe4GgOyFBP8MKIwVvytzHmfIQ==
+"@csstools/cascade-layer-name-parser@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@csstools/cascade-layer-name-parser/-/cascade-layer-name-parser-3.0.1.tgz#63392870f3d6668b5d1d0dbadd199a3122b5d9c5"
+  integrity sha512-EqmSJE8CcNoGXcgpiOD12PPMeuJZwiGMX69HPoam+GzltcjZjr6THQ0S+8a0NtQuefJtILzoDyQj+fp7+Qiorg==
 
-"@csstools/css-parser-algorithms@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@csstools/css-parser-algorithms/-/css-parser-algorithms-4.0.0.tgz#e1c65dc09378b42f26a111fca7f7075fc2c26164"
-  integrity sha512-+B87qS7fIG3L5h3qwJ/IFbjoVoOe/bpOdh9hAjXbvx0o8ImEmUsGXN0inFOnk2ChCFgqkkGFQ+TpM5rbhkKe4w==
-
-"@csstools/css-tokenizer@^4.0.0", "@csstools/css-tokenizer@^4.0.1":
+"@csstools/css-parser-algorithms@^4.0.1":
   version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@csstools/css-tokenizer/-/css-tokenizer-4.0.1.tgz#e07075c22009bfa71ac6d6d1b090cf713d6d835c"
-  integrity sha512-bPlN9S9O1A0euCpEWE4qnvB5YDuyYVsUTrxSgmAM1Is0j4tICHoVyOVAXfWMP/kS9ZrjvyIXWV2PmomiAXXqOw==
+  resolved "https://registry.yarnpkg.com/@csstools/css-parser-algorithms/-/css-parser-algorithms-4.0.1.tgz#0733e8bd28f0798d0512166bf8da7227826762fa"
+  integrity sha512-ShL8BqPfbKJrJiKFH0xBbN0i7Nrh9HXYRuF+pzyj93R/BL2YAsUxJeqANErzqM+0JGl7vjHp+3OIgd/DL69YIA==
+
+"@csstools/css-tokenizer@^4.0.1", "@csstools/css-tokenizer@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@csstools/css-tokenizer/-/css-tokenizer-4.0.2.tgz#7c11bbc7e2912a7def676d72ba6e00895aadc0d5"
+  integrity sha512-OoKoR0f76dCY666JlcbhmVTs2drYj1GUXZTYTcbUgJjh9Nv41aFfZ21bPQTERm5+L5cBDo466NltB2lplS5GBw==
 
 "@csstools/utilities@^3.0.0":
   version "3.0.0"
@@ -5542,14 +5542,14 @@ postcss-convert-values@^9.0.3:
     browserslist "^4.29.0"
     postcss-value-parser "^4.2.0"
 
-postcss-custom-properties@15.0.1:
-  version "15.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-15.0.1.tgz#d0cff0da504285587ddffa77c934fe654d96893a"
-  integrity sha512-cuyq8sd8dLY0GLbelz1KB8IMIoDECo6RVXMeHeXY2Uw3Q05k/d1GVITdaKLsheqrHbnxlwxzSRZQQ5u+rNtbMg==
+postcss-custom-properties@15.0.2:
+  version "15.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-15.0.2.tgz#bfa4c5616200a071d214d5e356ec987e80685d40"
+  integrity sha512-JQzdU0n3hk9iRvWus2r5yFa+j7mxr584OX86nQ6auGi65sE3j3XO4gtLlfl/7pGSC1szNOjCbkM4j3aprVOsCQ==
   dependencies:
-    "@csstools/cascade-layer-name-parser" "^3.0.0"
-    "@csstools/css-parser-algorithms" "^4.0.0"
-    "@csstools/css-tokenizer" "^4.0.0"
+    "@csstools/cascade-layer-name-parser" "^3.0.1"
+    "@csstools/css-parser-algorithms" "^4.0.1"
+    "@csstools/css-tokenizer" "^4.0.2"
     "@csstools/utilities" "^3.0.0"
     postcss-value-parser "^4.2.0"
 
